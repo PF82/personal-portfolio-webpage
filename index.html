@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- top navigation bar -->
+    <!-- id of navbar changed to id of top-nav-bar -->
+
+    <nav id="top-nav-bar">
+        <div class="hor-nav-bar">
+            <img class="logo" src="./images/PF.jpg" alt="Logo">
+            <div id="myLinks">
+                <a class="my-links active" href="#home">Home</a>
+                <a class="my-links" href="#about">About</a>
+                <a class="my-links" href="#services">Services</a>
+                <a class="my-links" href="#portfolio">Portfolio</a>
+                <a class="my-links" href="#testimonials">Testimonials</a>
+                <a class="my-links" href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <!-- id of welcome-section changed to id of home -->
+
+    <section id="home">
+        <video controls muted autoplay loop class="video-container">
+            <source src="./video.mp4" type="video/mp4" />
+        </video>
+
+        <img class="office-image" src="./images/Office.jpg" alt="Office Image">
+        <img class="photo" src="./images/Photo.jpg" alt="Photo">
+        <div class="introduction">
+            <h4 id="h4"></h4>
+            <h2 id="h2"></h2>
+            <h1 id="h1"></h1>
+            <h3 id="h3"></h3>
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section id="about" class="section">
+        <div class="title">
+            <h2>about</h2>
+        </div>
+
+        <div class="about-center section-center">
+            <article class="about">
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="history">about me</button>
+                    <button class="tab-btn" data-id="vision">work experience</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+                </div>
+
+                <div class="about-content">
+                    <div class="content active" id="history">
+                        <p>A resourceful, self-motivated and results-driven Web Designer / Front-End Developer with a
+                            passion for creating websites and web applications that are easy to navigate, aesthetically
+                            appealing, responsive, reliable and secure.</p>
+                        <p>In addition to my love of web design and development, I am also interested in a range of
+                            integrated digital marketing
+                            services and search technologies in order to help costumers get more reach and consequently
+                            boost their online audience.</p>
+                    </div>
+                    <div class="content" id="vision">
+                        <p>You can find more about my skills, experience and education on my resume.</p>
+                        <p>As you can see, I have over ten years of work experience as a QS in the UK.
+                            Working in office and on site in previous positions, I managed all the costs relating to
+                            construction projects. From the initial calculations to the final figures, I minimized the
+                            costs
+                            and enhanced value for money, while still achieving the required
+                            standards and quality.
+                            Additionally, I always tried to ensure projects were completed within the budget and on
+                            time.
+                        </p>
+                    </div>
+                    <div class="content" id="goals">
+                        <p>While I have enjoyed being a Design Technician and a QS for the past fifteen years, I was
+                            made redundant twice in my
+                            career. Being the first time during the 2008-2009 financial crisis and the second during the
+                            2020-2021 pandemic which
+                            prompted me to consider a career switch in order to have more stability in my life.
+                        </p>
+                        <p>Hence, the start of my new journey into the IT industry in December 2021 and since then I
+                            have
+                            never looked back.</p>
+                    </div>
+                </div>
+
+                <button onclick='openTab(this)' href="#" name="./resume.pdf" class="btn-resume" type="button">
+                    <span class="btn-inner-icon"><i class="fa fa-download"></i></span>
+                    <span class="btn-inner-text">Resume</span>
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- services -->
+
+    <section id="services">
+        <h2>services</h2>
+        <div class="honeycomb">
+            <div class="ibws-fix">
+                <div class="hexagon">
+                    <div class="hexagontent">Websites</div>
+                </div>
+                <div class="hexagon">
+                    <div class="hexagontent">Web Applications</div>
+                </div>
+                <div class="hexagon">
+                    <div class="hexagontent">Mobile Applications</div>
+                </div>
+                <div class="hexagon">
+                    <div class="hexagontent">Search Technologies</div>
+                </div>
+                <div class="hexagon">
+                    <div class="hexagontent">Digital Marketing</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>main skills</h3>
+        <div class="logo-group">
+            <div class="software-logo">
+                <p>HTML</p>
+                <img class="one" src="./images/HTML.jpg" alt="HTML Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>CSS</p>
+                <img class="two" src="./images/CSS.jpg" alt="CSS Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>JavaScript</p>
+                <img class="three" src="./images/JavaScript.jpg" alt="JavaScript Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>Bootstrap</p>
+                <img class="four" src="./images/Bootstrap.jpg" alt="Bootstrap Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>jQuery</p>
+                <img class="five" src="./images/jQuery.jpg" alt="jQuery Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>React</p>
+                <img class="six" src="./images/React.jpg" alt="React Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>Node</p>
+                <img class="seven" src="./images/Node.jpg" alt="Node Logo" width="100px">
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <!-- id of projects changed to id of portfolio -->
+
+    <section id="portfolio" class="projects-section">
+        <h2 class="projects-section-header">main projects</h2>
+
+        <div class="projects-grid">
+            <a href="https://codepen.io/PF82/details/ExwrRpV" target="_blank" class="project"
+                style="text-decoration: none;">
+                <img class="project-image" src="./projects/tribute-page.png" alt="Tribute Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Tribute Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/YzrBJGG" target="_blank" class="project"
+                style="text-decoration: none;">
+                <img class="project-image" src="./projects/survey-form.png" alt="Survey Form" />
+                <p class="project-title">
+                    <span class="code">
+                        Survey Form</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/wvPKeKY" target="_blank" class="project"
+                style="text-decoration: none;">
+                <img class="project-image" src="./projects/product-landing-page.png" alt="Product Landing Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Product Landing Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/JjOGoPM" target="_blank" class="project"
+                style="text-decoration: none;">
+                <img class="project-image" src="./projects/technical-documentation-page.png"
+                    alt="Technical Documentation Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Technical Documentation Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/KKygBQo" target="_blank" class="project"
+                style="text-decoration: none;">
+                <img class="project-image" src="./projects/personal-portfolio-webpage.png"
+                    alt="Personal Portfolio Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Personal Portfolio Webpage</span>
+                </p>
+            </a>
+        </div>
+
+        <a href="https://codepen.io/your-work/" class="btn-show-all" target="_blank" style="text-decoration: none;">Show
+            all<i class="fa fa-chevron-right"></i></a>
+    </section>
+
+    <!-- testimonials -->
+
+    <section id="testimonials">
+        <div class="testimonials">
+            <h2>testimonials</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"This company is the best. I am so happy with the result!"<br>
+                            <span>Emma Williams, Entrepreneur, Emma Hotel</span>
+                        </h4>
+                    </div>
+                    <div class="item">
+                        <h4>"One word... WOW!!"<br>
+                            <span>Julio Mauro, Full Stack Developer, Rep Tec</span>
+                        </h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Could I... BE any more happy with this company?"<br>
+                            <span>Sophie Turner, Small Business Owner, Sophie Massage Spa</span>
+                        </h4>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact (form, contact buttons and map) -->
+
+    <form id="contact" action="" method="">
+
+        <h3>Let's work together...</h3>
+        <h4>by making your vision a reality!</h4>
+
+        <div class="contact">
+            <div class="user-input">
+                <label for="name" class="input-label">Name
+                    <input id="name" value="" type="text" name="name" placeholder="Enter your name">
+                </label>
+                <label for="email" class="input-label">Email
+                    <input id="email" value="" type="email" name="email" placeholder="Enter your email">
+                </label>
+                <label for="phone" class="input-label">Phone Number<span class="clue"> (optional)</span>
+                    <input id="phone" value="" type="tel" name="phone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                        placeholder="Enter your phone number (For example: +00-0000-000-000)">
+                </label>
+                <label for="message" class="input-label">Message
+                    <textarea name="comments" id="text-area" placeholder="Enter your message here..."></textarea>
+                </label>
+                <label for="submit" class="input-label">
+                    <input id="submit" value="Submit" type="submit" name="submit">
+                </label>
+            </div>
+        </div>
+
+        <div class="wrapper-1">
+            <div class="button-1">
+                <div class="icon-1">
+                    <a id="profile-link" href="https://o2.co.uk/" target="_blank">
+                        <i class="fa fa-mobile-phone"></i>
+                    </a>
+                </div>
+                <span>Mobile Phone</span>
+                </a>
+            </div>
+            <div class="button-1">
+                <div class="icon-1">
+                    <a id="profile-link" href="https://WhatsApp.com" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+                <span>WhatsApp</span>
+            </div>
+            <div class="button-1">
+                <div class="icon-1">
+                    <a id="profile-link" href="https://skype.com" target="_blank">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </div>
+                <span>Skype</span>
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="map1" id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe
+                    style="height:100%;width:100%;border:0;" frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=London+N7+6rz&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+            </div>
+            <style>
+                #canvas-for-googlemap img {
+                    max-height: none;
+                    max-width: none !important;
+                    background: none !important;
+                }
+            </style>
+        </div>
+
+        <!-- <img class="map" src="./images//map.png" alt=""> -->
+    </form>
+
+    <!-- scroll to top -->
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a href="#myPage" title="To Top">Scroll to top </a>
+        </div>
+    </div>
+
+    <!-- footer (social media buttons, copyright and small logo) -->
+
+    <footer id="footer">
+        <div class="wrapper-2">
+            <div class="button-2">
+                <div class="icon-2">
+                    <a id="profile-link" href="https://github.com/" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+                <span>GitHub</span>
+                </a>
+            </div>
+            <div class="button-2">
+                <div class="icon-2">
+                    <a id="profile-link" href="https://uk.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+                <span>LinkedIn</span>
+            </div>
+            <div class="button-2">
+                <div class="icon-2">
+                    <a id="profile-link" href="https://en-gb.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <span>Facebook</span>
+            </div>
+        </div>
+
+        <div>
+            <img class="small-logo" src="./images/PF.jpg" alt="Logo">
+            <span class="copy-right">© 2022, Powered by</span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
